@@ -1,9 +1,9 @@
 #description
 #by Baltazar1697
-height = int(input())#max disks
-fromPole = str(input())# number
-toPole = str(input())
-withPole = str(input())
+height = int(input("Enter height "))#max disks
+fromPole = str(input("Enter starting pole"))# number
+toPole = str(input("Enter ending pole"))
+withPole = str(input("Enter temporary pole"))
 counter = 0
 def moveTower(height,fromPole, toPole, withPole):
     if height >= 1:
@@ -13,7 +13,6 @@ def moveTower(height,fromPole, toPole, withPole):
 
 def moveDisk(fp,tp):
     print("moving disk from",fp,"to",tp)
-    
 moveTower(height,fromPole, toPole, withPole)
 # к-во ходов 2^n-1
 print(counter)
