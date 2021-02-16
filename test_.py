@@ -1,6 +1,6 @@
 import pytest
-from ASD.ASD_lab_Hanoi import moveTower
-from ASD.ASD_lab_Fib import Fib
+from ASD.ASD_1.ASD_lab_Hanoi import moveTower
+from ASD.ASD_1.ASD_lab_Fib import Fib
 
 fromPole = str("a")
 toPole = str("c")
