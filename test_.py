@@ -16,12 +16,16 @@ def test_fib(input, exptected):
 
 
 
-from ASD.ASD_2.ASD_lab_sortings import quicksort_func
+from ASD.ASD_2.ASD_lab_sortings import quicksort_func, buble_sort_func
 
 def gen_and_sort(max_value):
   arr = [randint(0, max_value) for x in range(max_value)]
   return arr, sorted(arr)
 
 @pytest.mark.parametrize("array, expected",[gen_and_sort(100),gen_and_sort(1000),gen_and_sort(10000)])
-def test_quicksort_100(array, expected):
+def test_quicksort(array, expected):
     assert quicksort_func(array,0,len(array)-1) == expected
+
+@pytest.mark.parametrize("array, expected",[gen_and_sort(100),gen_and_sort(1000),gen_and_sort(10000)])
+def test_buble_sort(array, expected):
+    assert buble_sort_func(array) == expected
