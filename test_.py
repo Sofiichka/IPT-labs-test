@@ -1,4 +1,6 @@
 import pytest
+from random import randint
+
 from ASD.ASD_1.ASD_lab_Hanoi import moveTower
 from ASD.ASD_1.ASD_lab_Fib import Fib
 
