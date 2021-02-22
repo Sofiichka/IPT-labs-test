@@ -1,8 +1,8 @@
 #powered by Baltazaer1697
 from random import randint
 import time
-#addition function for quick sort, which divide list in parts 
 
+#addition function for quick sort, which divide list in parts 
 def partition(array, low, high):
     global swaps
     i = (low-1) 
@@ -45,7 +45,7 @@ for x in range(0,10):
     quicksort_func(testing_list,0,len(testing_list)-1)
     final_time += time.time()-start_time
 print("Average time for quicksort  = ", final_time/10)  #average time for sorting on 10 lists
-print(swaps)                                            #counters swap actions during sorting
+print("Swap actions during sorting ", swaps)            #counters swap actions during sorting
 
 
 swaps = 0
@@ -57,4 +57,4 @@ for x in range(0,10):
     buble_sort_func(testing_list)
     final_time += time.time()-start_time
 print("Average time for buble sort = ", final_time/10)  #average time for sorting on 10 lists
-print(swaps)                                            #counters swap actions during sorting
+print("Swap actions during sorting ", swaps)            #counters swap actions during sorting
