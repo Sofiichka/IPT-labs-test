@@ -8,5 +8,5 @@ def Fib(a):
     elif a == 1:
         return 1
     else:
-        sum = Fib(a-2)+Fib(a-1)
+        sum += Fib(a-2)+Fib(a-1)
         return sum
