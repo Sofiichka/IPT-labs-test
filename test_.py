@@ -38,3 +38,30 @@ def test_default_queue():
     main = Queue()
     main.push(65)
     assert main.arr[0] == 65
+
+def test_default_queue_fails_on_pulled_element():
+    main = Queue()
+    main.push(0)
+    main.push(1)
+    try:
+        main.pull()
+        assert False
+    except Exception:
+        assert True
+
+from ASD.ASD_4.ASD_CYCLED_QUEUE import Queue as CycledQueue
+
+def test_Cycled_queue():
+    main = CycledQueue()
+    main.push(65)
+    assert main.arr[0] == 65
+
+def test_Cycled_queue_fails_on_pulled_element():
+    main = CycledQueue()
+    main.push(0)
+    main.push(1)
+    try:
+        main.pull()
+        assert False
+    except Exception:
+        assert True
