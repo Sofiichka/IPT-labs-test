@@ -18,18 +18,18 @@ class Queue:
             return -1
         else:
             self.arr.pop()
+
     def display(self):
         if self.isEmpty():
             print("IT'S EMPTY")
         else:
             for i in range(0,len(self.arr)):
                 print(self.arr[i]) 
-            print(self.rear)
             
-main = Queue()
-print(main.pull())
-for i in range(10,15):
-    main.push(i)
-main.display()
-main.pull()
-main.display()
+# main = Queue()
+# print(main.pull())
+# for i in range(10,15):
+#     main.push(i)
+# main.display()
+# main.pull()
+# main.display()
