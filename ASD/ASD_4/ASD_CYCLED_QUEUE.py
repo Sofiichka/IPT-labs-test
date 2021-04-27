@@ -1,4 +1,3 @@
-
 SIZE = 5
 
 
@@ -15,7 +14,7 @@ class Queue:
         else:
             return False
 
-    def isEmpty(self): #bool method if queue empty
+    def isEmpty(self):                     # bool method if queue empty
         if self.front == -1:
             return True
         else:
@@ -27,24 +26,25 @@ class Queue:
         else:
             if self.front == -1:
                 self.front = 0
-            self.rear = (self.rear+1)%SIZE #move rear number to the front
+            self.rear = (self.rear+1)%SIZE # move rear number to the front
                                            # in case if it's the end of queue, move to the start 
             self.arr[self.rear] = element
             print('Element inserted')
 
-    def pull(self): #delete or pull method for removing elements from queue
+    def pull(self):     #delete or pull method for removing elements from queue
         element = 0
         if self.isEmpty():
             print("IT'S EMPTY")
             return -1
         else:
-            element = self.arr[self.front]
-            if self.front == self.rear:
-                self.front = self.rear = -1
+            element = self.arr[self.front] # pull first element
+            if self.front == self.rear:    # if the begin and the end of queue is te same element
+                self.front = self.rear = -1 # remove them both and make the queue empty
             else:
-                self.front = (self.front+1)% SIZE
+                self.front = (self.front+1)% SIZE # move front element in the front
         return element
-    def display(self):
+
+    def display(self): #display queue current state
         if self.isEmpty():
             print("IT'S EMPTY")
         else:
