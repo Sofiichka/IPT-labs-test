@@ -26,10 +26,12 @@ class Queue:
             for i in range(0,len(self.arr)):
                 print(self.arr[i]) 
             
-# main = Queue()
-# print(main.pull())
-# for i in range(10,15):
-#     main.push(i)
-# main.display()
-# main.pull()
-# main.display()
+main = Queue()
+print(main.pull())
+main.push(4)
+for i in range(10,15):
+    main.push(i)
+main.display()
+print()
+main.pull()
+main.display()
