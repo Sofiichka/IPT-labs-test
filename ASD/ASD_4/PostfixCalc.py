@@ -17,6 +17,6 @@ def postfics_calculus(string):
                 elif i == '*':
                     s.append(operand2 * operand1)
                 elif i == '/' and operand2 != 0:
-                    s.append(operand2 / operand1)
+                    s.append(operand1 / operand2)
     return(s[0])
 print(postfics_calculus("12+5*"))
