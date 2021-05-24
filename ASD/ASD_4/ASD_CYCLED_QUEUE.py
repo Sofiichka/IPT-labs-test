@@ -1,6 +1,4 @@
 SIZE = 5
-
-
 class Queue:
     def __init__(self): #constructor for Queue class
         self.arr = [None]*SIZE
@@ -53,11 +51,3 @@ class Queue:
                 print(self.arr[i])
             print(self.arr[i+1])
             print(self.rear)
-        
-main = Queue()
-print(main.pull())
-for i in range(10,15):
-    main.push(i)
-main.display()
-main.pull()
-main.display()

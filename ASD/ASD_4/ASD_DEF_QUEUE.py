@@ -1,7 +1,6 @@
 class Queue:
     def __init__(self): #constructor for Queue class
         self.arr = []*10
-        self.front = 0
 
     def isEmpty(self): #bool method if queue empty
         if self.arr ==  []:
@@ -25,13 +24,3 @@ class Queue:
         else:
             for i in range(0,len(self.arr)):
                 print(self.arr[i]) 
-            
-main = Queue()
-print(main.pull())
-main.push(4)
-for i in range(10,15):
-    main.push(i)
-main.display()
-print()
-main.pull()
-main.display()
