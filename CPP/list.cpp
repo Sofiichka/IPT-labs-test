@@ -66,8 +66,8 @@ void List<T>::push_back(T data)
 		current->pNext = new Node<T>(data);
 	}
 	Size++;
-
 }
+
 template<typename T>
 void List<T>::listOut() // templated method for output list in console  
 {
@@ -81,7 +81,7 @@ void List<T>::listOut() // templated method for output list in console
 }
 
 template<typename T>
-List<T> List<T>::listCopy(List list) // tamplated method for copying list
+List<T> List<T>::listCopy(List list) // templated method for copying list
 {
 	List<T> list_new;
 	for (int i = 0; i < list.GetSize(); i++) {
