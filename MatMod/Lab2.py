@@ -21,7 +21,7 @@ solution = linprog(c = target, A_eq = coefs_1, b_eq = coefs_2, bounds = bnd, met
 print(solution)
 
 # Some description of output
-# con - ramainders of equtation limitation 
+# con - remainders of equtation limitation 
 # fun - optimal values for function
 # message - operational status
 # nit - count of iterations for solving
