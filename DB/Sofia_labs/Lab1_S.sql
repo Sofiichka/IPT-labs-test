@@ -18,6 +18,7 @@ CREATE TABLE Rooms (
     type VARCHAR(15) NOT NULL,
     Area INT,
     Seats INT,
-    Unit INT FOREIGN KEY REFERENCES Units(ID)
+    Unit INT FOREIGN KEY REFERENCES Units(ID),
+    Room_Name INT
 );
 
