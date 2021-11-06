@@ -340,3 +340,4 @@ ASALocalRun/
 healthchecksdb
 .pytest_cache
 .vscode
+*/.ipynb_checkpoints/*
