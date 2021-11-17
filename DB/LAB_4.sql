@@ -4,5 +4,6 @@ GO
 SELECT Name, Surname FROM Students WHERE (Billed_for_studying = 0)
 GO
 
-SELECT SUM(Cost) as summirized_debt FROM Students, Student_Groups, Specializations 
-    WHERE (Billed_for_studying = 0) AND Group_FK = Student_Gr_ID AND Specialization_FK = Spec_ID
+SELECT Student_Groups.Name, SUM(Cost) as SUM_DEBT 
+FROM Student_Groups INNER JOIN Specializations on Specializations.Spec_ID = Student_Groups.Specialization_FK
+GROUP BY Student_Groups.Name
